@@ -1,6 +1,5 @@
 <?php
- 
-	$passwords = array(
+ 	$passwords = array(
 		"hunter2",
 		"swordfish",
 		"123456",
@@ -42,6 +41,19 @@
 		<title>8021.X</title>
 		<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
 		<link rel="stylesheet" type="text/css" href="guide.css">
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>
+		<script>
+			$(document).ready(function(){
+			  $("#root").click(function(){
+			      $(".prompt").text("#");
+			      $(".prompt2").text("#");
+			  });
+			  $("#sudo").click(function(){
+			  		$(".prompt").text("$ sudo");
+			  		$(".prompt2").text("$");
+			  });
+		  });
+		</script>
 	</head>
 	<body>
 		<h1>Zuzak's ten step guide to get <?php echo $name; ?> on the 'net!</h1>
@@ -54,7 +66,7 @@
 			</li>
 			<li>
 				You can get information on <span class="command">wpa_supplicant</span> by using <span class="command">man</span>.
-				<pre class="command"><span class="prompt">#</span> <span class="command">man</span> wpa_supplicant</pre>
+				<pre class="command"><span class="prompt2">#</span> <span class="command">man</span> wpa_supplicant</pre>
 			<li>
 				<span class="command">wpa_supplicant</span> stores its config in <span class="dir">/etc/wpa_supplicant/wpa_supplicant.conf</span>. Navigate to it:
 				<pre class="command"><span class="prompt">#</span> <span class="command">cd</span> /etc/wpa_supplicant/</pre>
@@ -109,11 +121,14 @@ network={
 			</li>
 			<li>
 				To make sure everything works, check if you can connect to the <abbr title="Local Area Network">LAN</abbr>: <!-- rarely useful but ten steps sounds better than nine -->
-				<pre class="command"><span class="prompt">#</span> <span class="command">ping</span> central</pre>
+				<pre class="command"><span class="prompt2">#</span> <span class="command">ping</span> central</pre>
 			</li>
 			<li>
 				And check that you can connect to the outside world:
-				<pre class="command"><span class="prompt">#</span> <span class="command">ping</span> google.com</pre>
+				<pre class="command"><span class="prompt2">#</span> <span class="command">ping</span> google.com</pre>
 		</ol>
+		<footer>
+			Created by zuzak with help from auj &middot; (prompt: <a href="#" id="root">#</a> &middot; <a href="#" id="sudo">$</a>)
+		</footer>
 	</body>
 </html>

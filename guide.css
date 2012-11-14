@@ -13,7 +13,7 @@ pre {
 	padding-top:10px;
 	padding-bottom:10px;
 	}
-span.prompt {
+span.prompt, span.prompt2 {
 	color:#aa0000;
 	}
 span.command {
@@ -41,4 +41,11 @@ span.string {
 li {
 	margin-top:1em;
 	margin-bottom:1em;
+}
+footer {
+	text-align:right;
+	font-size:70%;
+}
+a {
+	color:#666;
 }
