@@ -1,5 +1,5 @@
 <?php
-	$user = "your_username";
+	$user = "";
  	$passwords = array(
 		"hunter2",
 		"swordfish",
