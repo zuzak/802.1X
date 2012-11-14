@@ -1,4 +1,5 @@
-<?php 
+<?php
+ 
 	$passwords = array("hunter2","swordfish","123456","Joshua","rosebud","letmein","xyzzy","password","iloveyou","abc123");
 	$password = array_rand($passwords);
 	$host = gethostbyaddr($_SERVER['REMOTE_ADDR']);
@@ -17,10 +18,17 @@
 		$name=explode(" ",$name);
 		$name=trim($name[1]);
 	} else {
-		$user = "your_username";
+		$foo = 1;
+		while($foo<4){
+			$letter = chr(97 + mt_rand(0, 25));
+			$user .= $letter;
+			$foo++;
+		} 
+		$user .= rand(2,15);
 		$name = "you";
 	}
 ?><!DOCTYPE html>
+
 <html>
 	<head>
 		<title>8021.X</title>
