@@ -1,6 +1,17 @@
 <?php
  
-	$passwords = array("hunter2","swordfish","123456","Joshua","rosebud","letmein","xyzzy","password","iloveyou","abc123");
+	$passwords = array(
+		"hunter2",
+		"swordfish",
+		"123456",
+		"Joshua",
+		"rosebud",
+		"letmein",
+		"xyzzy",
+		"password",
+		"iloveyou",
+		"abc123"
+		);
 	$password = array_rand($passwords);
 	$host = gethostbyaddr($_SERVER['REMOTE_ADDR']);
 	$host = explode(".",$host);
