@@ -23,10 +23,7 @@ by the address of Central:
 				<pre class="command"><span class="prompt">$</span> <span class="command">ssh</span> <?php echo $user 
 ?>@central.aber.ac.uk</pre>
 				<?php if ($onstunet == true) {
-					echo "As you are currently on Stunet, and because Aberystwyth's <abbr title=\"Domain Name System\">DNS</abbr> servers 
-will add the suffix for you, one can simply type: <pre class=\"command\"><span 
-class=\"prompt\">$</span> <span 
-class=\"command\">ssh</span> "+$user+"@central</pre>";
+					echo "As you are currently on Stunet, and because Aberystwyth's <abbr title=\"Domain Name System\">DNS</abbr> servers will add the suffix for you, one can simply type: <pre class=\"command\"><span class=\"prompt\">$</span> <span class=\"command\">ssh</span> "+$user+"@central</pre>";
 				} ?>
 			</li>
 		</ol>
