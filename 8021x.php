@@ -8,12 +8,9 @@
 		$device = substr($host[0],0,3);
 		$user = substr($host[0],3);
 	 	$data = array();
-		//$data = Net_Finger::query("central.aber.ac.uk","dog2");
 	   exec("finger ".$user."@central",$data);   
-	   //var_dump($data);
    	$line = $data[5];
    	$line = explode(":",$line);
-		//var_dump($line);
 		$name=$line[2];
 		$name=explode(" ",$name);
 		$name=trim($name[1]);
