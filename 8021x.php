@@ -48,7 +48,7 @@ require "main.php";
 				<pre class="command"><span class="prompt">#</span> <span class="command">vi</span> wpa_supplicant.conf</pre>
 			</li>
 			<li>
-				Now add the config shit:
+				Now add the configuration settings:
 				<pre class="file">
 eapol_version=1
 fast_reauth=0
