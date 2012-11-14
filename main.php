@@ -21,7 +21,7 @@
 		$device = substr($host[0],0,3);
 		$user = substr($host[0],3);
 	 	$data = array();
-	   exec("finger ".$user."@central",$data);   
+	   shell_exec("finger ".$user."@central",$data);   
    	$line = $data[5];
    	$line = explode(":",$line);
 		$name=$line[2];

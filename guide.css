@@ -49,3 +49,9 @@ footer {
 a {
 	color:#666;
 }
+span#donemsg{
+	border:2px solid lime;
+	padding:5px;
+	background-color:#222;
+	
+}
