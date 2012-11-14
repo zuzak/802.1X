@@ -1,4 +1,5 @@
 <?php
+	$user = "your_username";
  	$passwords = array(
 		"hunter2",
 		"swordfish",
