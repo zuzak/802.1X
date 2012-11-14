@@ -1,0 +1,40 @@
+body {
+	background-color:#333;
+	color:#999;
+	margin-left:5%;
+	font-family:sans-serif;
+}
+
+pre {
+	color:white;
+	background-color:black;
+	margin-right:40%;
+	padding-left:20px;
+	padding-top:10px;
+	padding-bottom:10px;
+	}
+span.prompt {
+	color:#aa0000;
+	}
+span.command {
+	color:cyan;
+	font-weight:bold;
+	background-color:#222222;
+	padding:2px;
+	font-family:monospace;
+}
+pre span.command {
+	color:cyan;
+	border:0;
+	background-color:transparent;
+}
+
+pre.file {
+	color:#444;
+}
+span.edit {
+	color:white;
+}
+span.string {
+	color:#888;
+}
