@@ -13,5 +13,7 @@ include "main.php";
         <ul>
             <li><a href="8021x.php">Connecting to Aberystwyth University's student network via 802.1x</a></li>
             <li><a href="central.php">Connecting to an unofficial Aberystwyth IRC network via Central</a></li>
+            <li><a href="https://github.com/zuzak/802.1X">(Contribute to these tutorials via Github)</a></li>
+        </ul>
 	</body>
 </html>
