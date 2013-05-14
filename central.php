@@ -6,18 +6,12 @@ include "main.php";
 		<title>Connecting to Central</title>
 		<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
 		<link rel="stylesheet" type="text/css" href="guide.css">
-		<?php if ($data[8] != "Never logged in.") {
-			echo "<style type=\"text/css\">div#ssh{display:none}</style>";
-		} else {
-			//echo "<style type=\"text/css\">div#ssh{display:block} div#rest{display:none;}</style>";
-		} ?>
 	</head>
 	<body>
 		<h1>How to get a persistent IRC session</h1>
 		<span class="subtitle">Woo!</span>
 		<p>This tutorial is made up of three parts: getting an SSH session running, getting a <span class="command">screen</span> session running, 
 and getting <span class="command">irssi</span> running.</p>
-		<?php if ($data[8] != "Never logged in."){ echo "<span  id=\"donemsg\">Yay! You're connected to central! </span>";}?>
 		<div id="ssh">
 			<h2>SSH</h2>
 			<p><abbr title="Secure SHell">SSH</abbr> is a protocol, related to Telnet, used to securely communicate over an insecure network. It's pretty 
@@ -95,7 +89,9 @@ by the address of Central:
 			</li>		
 			<li>
 				Finally, you can join a channel and start chatting. Channels (i.e. "rooms") on IRC generally begin with a #, with a few exceptions.
-				<pre class="command">/join #42</pre>
+                <pre class="command">/join #42
+/join #oaosidl
+/join #aber</pre>
 			</li>
 		</ol>
 		</div>

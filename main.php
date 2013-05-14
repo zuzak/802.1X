@@ -10,7 +10,9 @@
 		"xyzzy",
 		"password",
 		"iloveyou",
-		"abc123"
+        "abc123",
+        "mellon",
+        "chair"
 		);
 	$password = array_rand($passwords);
 	$host = gethostbyaddr($_SERVER['REMOTE_ADDR']);
