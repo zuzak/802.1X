@@ -22,9 +22,6 @@ require "main.php";
 		</script>
 	</head>
 	<body>
-		<h1>Zuzak's ten step guide to get <?php echo $name; ?> on the 'net!</h1>
-		<span class="subtitle">Woo!</span>
-		
 		<ol id="steptostep">
 			<li>
 				First, get <span class="command">wpa_supplicant</span> installed and stuff.
@@ -93,8 +90,5 @@ network={
 				And check that you can connect to the outside world:
 				<pre class="command"><span class="prompt2">#</span> <span class="command">ping</span> google.com</pre>
 		</ol>
-		<footer>
-			Created by zuzak with help from auj &middot; (prompt: <a href="#" id="root">#</a> &middot; <a href="#" id="sudo">$</a>)
-		</footer>
 	</body>
 </html>
