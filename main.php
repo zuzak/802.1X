@@ -22,7 +22,7 @@
         $user = $host[0];
     } else {
         $foo = 1;
-        while( $foo < 4 ){
+        while ( $foo < 4 ) {
             $letter = chr( 97 + mt_rand( 0, 25 ) );
             $user .= $letter;
             $foo++;

@@ -67,13 +67,13 @@ network={
 				<dl>
 					<dt>-B</dt>
 					<dd>Forces <span class="command">wpa_supplicant</span> to run in the background.
-					
+
 					<dt>-c</dt>
 					<dd>Defines the configuration file for <span class="command">wpa_supplicant</span>; i.e. the one you just edited.
-					
+
 					<dt>-i</dt>
 					<dd>Tells the program which interface to use. <span class="command">eth0</span> is the first Ethernet port. Similarly, <span class="command">wlan0</span> is the first wireless device. Due to <a href="https://en.wikipedia.org/wiki/Consistent_Network_Device_Naming">recent changes</a> this may be incorrect: run <span class="command">ip a</span> to find the correct name if <span class="command">eth0</span> doesn't work.</dd>
-					
+
 					<dt>-D</dt>
 					<dd>Informs the program of the driver it should use.</dd>
 				</dl>

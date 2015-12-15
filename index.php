@@ -30,7 +30,7 @@ include "main.php";
 					Just open your favourite terminal and type your Aber
 					username followed by the address of Central:
 					<pre class="command"><span class="prompt">$</span> <span class="command">ssh</span> <?php echo $user ?>@central.aber.ac.uk</pre>
-					<?php if ($onstunet == true) {
+					<?php if ( $onstunet == true ) {
 						echo "As you are currently on Stunet, and because Aberystwyth's <abbr title=\"Domain Name System\">DNS</abbr> servers will add the suffix for you, one can simply type: <pre class=\"command\"><span class=\"prompt\">\$</span> <span class=\"command\">ssh</span> $user@central</pre>";
 					} ?>
 				</li>
@@ -51,7 +51,7 @@ include "main.php";
 				</li>
 				<li>
 					Run <span class="command">putty.exe</span>.
-					In the server box, type <span class="command"><?php echo $user ?>@central<?php if ($onstunet == false){echo ".aber.ac.uk";} ?></span>, and click connect.
+					In the server box, type <span class="command"><?php echo $user ?>@central<?php if ( $onstunet == false ) { echo ".aber.ac.uk"; } ?></span>, and click connect.
 				</li>
 				<li>
 					It's worth mentioning that PuTTY is highly customisable,
@@ -108,7 +108,7 @@ include "main.php";
 			</li>
 			<li>
 				It is best practice to register your nickname the first time you use it, to make it more difficult for other users to impersonate you.
-				<pre class="command">/msg NickServ REGISTER <span class="edit">swordfish <?php echo $passwords[$password];?> youremail@example.com</span></pre>
+				<pre class="command">/msg NickServ REGISTER <span class="edit">swordfish <?php echo $passwords[$password]; ?> youremail@example.com</span></pre>
 				You should then associate yourself with your identity every time you connect to the server with:
 				<pre class="command">/msg NickServ IDENTIFY <?php echo $passwords[$password]; ?></pre>
 				Note that if you use a nickname someone else has already registered, you might be forced to rename to a weird nickname (like Guest12345).
